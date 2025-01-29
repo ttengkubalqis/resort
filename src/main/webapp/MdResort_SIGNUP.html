@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - MD Resort</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f9fa;
+            color: #728687;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .signup-box {
+            width: 400px;
+            margin: 50px auto;
+            background: white;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            margin: 10px 0;
+            color: #728687;
+        }
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .signup-button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #728687;
+            color: white;
+            font-weight: bold;
+        }
+
+        .signup-button:hover {
+            background-color: #606f78;
+        }
+
+        .account-link {
+            margin-top: 10px;
+        }
+
+        .account-link a {
+            color: #4285f4;
+            text-decoration: none;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #728687;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-logo img {
+            max-width: 100px;
+            margin-bottom: 5px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .social-icons a img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: black;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="signup-box">
+            <div class="logo">
+                <img src="MdResort_logo.png" alt="MD Resort Logo">
+                <h1>MD Resort Pantai Siring Melaka</h1>
+            </div>
+
+            <form action="servletSignup" method="POST">
+                <div class="form-group">
+                    <label for="customer-name">Name:</label>
+                    <input type="text" id="customer-name" name="customer-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone-no">Phone Number:</label>
+                    <input type="text" id="phone-no" name="phone-no" required>
+                </div>
+                <button type="submit" class="signup-button">Sign Up</button>
+            </form>
+
+            <p class="account-link">
+                Already have an account? <a href="MdResort_LOGIN.html">Log In</a>
+            </p>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="MdResort_logo.png" alt="Logo">
+                </div>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><img src="facebook_icon.png" alt="Facebook"></a>
+                    <a href="https://instagram.com"><img src="instagram_icon.png" alt="Instagram"></a>
+                    <a href="https://whatsapp.com"><img src="whatsapp_icon.png" alt="WhatsApp"></a>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="MdResort_HOMEPAGE.jsp">Home</a></li>
+                    <li><a href="MdResort_ROOM.jsp">Room</a></li>
+                    <li><a href="MdResort_FACILITIES.html">Facilities</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
